@@ -1,0 +1,8 @@
+{
+  "appId": "com.ahm.capacitor.camera.preview.demo.react",
+  "appName": "Demo",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "build",
+  "cordova": {}
+}
