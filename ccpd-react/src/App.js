@@ -1,8 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+
+import { Plugins } from "@capacitor/core";
 
 function App() {
+  const { CameraPreview, BiometricAuth } = Plugins;
+  const [image, setImage] = useState(null);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +22,53 @@ function App() {
         >
           Learn React
         </a>
+        <button
+          onClick={() => {
+            CameraPreview.start({ position: "rear" });
+          }}
+        >
+          Show camera preview
+        </button>
+        <button
+          onClick={() => {
+            CameraPreview.flip();
+          }}
+        >
+          Flip camera preview
+        </button>
+        <button
+          onClick={async () => {
+            const result = await CameraPreview.capture();
+            console.log(result.value);
+            setImage(result.value);
+
+            CameraPreview.stop();
+          }}
+        >
+          Capture
+        </button>
+
+        <br />
+        <button
+          onClick={async () => {
+            const result = await BiometricAuth.verify({
+              reason: "Message ..."
+            });
+            console.log(result);
+          }}
+        >
+          BiometricAuth
+        </button>
+
+        <button
+          onClick={async () => {
+            const result = await BiometricAuth.isAvailable();
+            console.log(result);
+          }}
+        >
+          BiometricAuth
+        </button>
+        {image && <img alt="img" src={`data:image/png;base64, ${image}`} />}
       </header>
     </div>
   );

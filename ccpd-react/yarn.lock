@@ -1018,10 +1018,17 @@
     which "^1.3.0"
     xml2js "^0.4.19"
 
-"@capacitor/core@^1.4.0", "@capacitor/core@latest":
+"@capacitor/core@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-1.4.0.tgz#4f6a1fd501687f1819e7be673b528cc3e8f7ce97"
   integrity sha512-9cLk6f8A2BjSh9KTItAOXGFSS9ZsVReMUACWw+1lEHsSk5kdPbp0oQ8c1kOX36LlHeBKi/EPSs8dXNedNHyHQA==
+  dependencies:
+    tslib "^1.9.0"
+
+"@capacitor/core@latest":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-1.5.0.tgz#23c97ce35d0e27ed2eaa1977aa8564f25019db93"
+  integrity sha512-n2NLkHxmJFElFVFLxYlXynv7EIl+C/1osgIfHAD80M/iX+Qz2ISxuV5qWBfZfTx/IX1VFbrrDeH3g2QexQANlQ==
   dependencies:
     tslib "^1.9.0"
 
@@ -2639,10 +2646,15 @@ caniuse-lite@^1.0.30001010:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001023.tgz#b82155827f3f5009077bdd2df3d8968bcbcc6fc4"
   integrity sha512-C5TDMiYG11EOhVOA62W1p3UsJ2z4DsHtMBQtjzp3ZsUglcQn62WOUgW0y795c7A5uZ+GCEIvzkMatLIlAsbNTA==
 
-capacitor-camera-preview@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/capacitor-camera-preview/-/capacitor-camera-preview-0.2.0.tgz#8ae2252943ceb57cf56f66084ebdbf57ff28c586"
-  integrity sha512-Fpy54zbfcu/O4NuaYQBk1L2LVgXJXPa/3kLxTqXOCekyIOIU3teOu/d4zW/neBzkwmmVGbFBSRujjutctHA55A==
+capacitor-biometric-auth@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/capacitor-biometric-auth/-/capacitor-biometric-auth-0.0.7.tgz#5a7c5120e392ae5415bc27f9b2c2c60abb7036ed"
+  integrity sha512-3mDKrrBJ9Jj5fKBz7L24jTJnHqwHGHLjSpjiyyflrjt0HGC+Uv3Bz6yn223K1z9IUlnjsqVYOloqCWV9d3RTjg==
+  dependencies:
+    "@capacitor/core" latest
+
+capacitor-camera-preview@../../capacitor-camera-preview:
+  version "0.4.0"
   dependencies:
     "@capacitor/core" latest
 
