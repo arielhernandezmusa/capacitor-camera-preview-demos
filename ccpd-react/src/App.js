@@ -30,8 +30,13 @@ function App() {
           Show camera preview
         </button>
         <button
-          onClick={() => {
-            CameraPreview.flip();
+          onClick={async () => {
+            try {
+              await CameraPreview.flip();
+              console.log("flipped");
+            } catch (e) {
+              console.log("not flipped");
+            }
           }}
         >
           Flip camera preview
