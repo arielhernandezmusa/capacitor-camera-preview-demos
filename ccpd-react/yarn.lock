@@ -996,15 +996,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@capacitor/android@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-1.5.2.tgz#ef2f1cb6af26823735f07f36c9660d367c29635e"
-  integrity sha512-pJOFjYgpuVMSN0Bm+Ndkyf/xuMwRDPx3jtz/5xCbypM1tf6W75tqV+z5ABLhKySx8Bo+b/t7xDKwRG7+PEUwWQ==
+"@capacitor/android@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-2.0.1.tgz#551c87703b8f798120769e7a6a04d3a0ee5bce5e"
+  integrity sha512-UKjeY34BlLGvRzDdPLk3/u0j9Ufmyy1gtHGKP6uZ3Qh0ciHFFKnL7PVw5Tf+H19HHPfZIal4rGTndvAWQsCMeA==
 
-"@capacitor/cli@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-1.5.2.tgz#f5abb08f339113a308d3590a9c2219fcdcd73069"
-  integrity sha512-YmLJm4aBLCVnDc3Is8024TgJzzhS/ms+eHW98sU752thE0mwrDvwB3ULHEn3FvPlVInktIhhDSZyZZD4QpfqSw==
+"@capacitor/cli@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/cli/-/cli-2.0.1.tgz#db820e192f94d3bb70a238e98591a6d9f73dfb90"
+  integrity sha512-G6+Wk8Q7V8+rDcIj1Nk3iMnCGgMbl3gSFyL8aMsuvSJ4XSXLex43TJLWSNECuRv4OwyEPqUFH0g5eqEolaTSwQ==
   dependencies:
     chalk "^2.3.0"
     commander "^2.12.2"
@@ -1018,10 +1018,10 @@
     which "^1.3.0"
     xml2js "^0.4.19"
 
-"@capacitor/core@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-1.5.2.tgz#c32db9fa5659c4327ac467c5eaf47391191683b5"
-  integrity sha512-0UPJUzwVrPM4YY4BPLr6oypmn8FYF7iaOYujAtUtOfQjuoAvg7c5DKdZ8LOQtsuG6JqsIsTcqZ6w8nGQQ+g0YQ==
+"@capacitor/core@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/core/-/core-2.0.1.tgz#d5ad065924602646128102078d55c3d9d633be40"
+  integrity sha512-6GoklVQdHZ6jBAkVgPySaTBw+/zz4P+U1yFZkNTVdYAEGze4Zv5cGlUF6OpvlZRiCk3p7ZWt4kC8baIh/Zxu3A==
   dependencies:
     tslib "^1.9.0"
 
@@ -1032,10 +1032,10 @@
   dependencies:
     tslib "^1.9.0"
 
-"@capacitor/ios@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-1.5.2.tgz#a778666811aaec37ee4259dad203a83e90f993f8"
-  integrity sha512-LD6TDnxIGkCm5LEEe/8EuOSmiOTKxZ+fuzFgPlKyKqNEKrR+wcALOBB+Uq9WrWtq0BmU39p3OwRfhjCJxf5m1g==
+"@capacitor/ios@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-2.0.1.tgz#1f1cd3736dcf00373e3303d89a0164f2f168d24e"
+  integrity sha512-KzrWZAfLYe+eyJjvj1IjueIr0goigEREi4GkidKkGQdlP2EM4gHvzpkspD2L+HUP5c6dkReU5qkTzL2857TZ4w==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -2646,15 +2646,10 @@ caniuse-lite@^1.0.30001010:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001023.tgz#b82155827f3f5009077bdd2df3d8968bcbcc6fc4"
   integrity sha512-C5TDMiYG11EOhVOA62W1p3UsJ2z4DsHtMBQtjzp3ZsUglcQn62WOUgW0y795c7A5uZ+GCEIvzkMatLIlAsbNTA==
 
-capacitor-biometric-auth@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/capacitor-biometric-auth/-/capacitor-biometric-auth-0.0.7.tgz#5a7c5120e392ae5415bc27f9b2c2c60abb7036ed"
-  integrity sha512-3mDKrrBJ9Jj5fKBz7L24jTJnHqwHGHLjSpjiyyflrjt0HGC+Uv3Bz6yn223K1z9IUlnjsqVYOloqCWV9d3RTjg==
-  dependencies:
-    "@capacitor/core" latest
-
-capacitor-camera-preview@../../capacitor-camera-preview:
-  version "0.4.0"
+capacitor-biometric-auth@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/capacitor-biometric-auth/-/capacitor-biometric-auth-0.0.8.tgz#1a05f9f2aaa2cd9c4f2e001d4f0d279913e47c0c"
+  integrity sha512-Lbf7cUPMUZVPZWqNUtKPzrSusoZAyUIGPto02tVjcvZ4lSmJwsd8lHbb0x4czbyrZQvT1VD8jq4hD3fb22J9HQ==
   dependencies:
     "@capacitor/core" latest
 
