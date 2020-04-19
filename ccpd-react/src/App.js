@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      <div style={{ width: "200px", height: "200px" }} id="cam"></div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,7 +25,7 @@ function App() {
         </a>
         <button
           onClick={() => {
-            CameraPreview.start({ position: "rear" });
+            CameraPreview.start({ position: "rear", parent: "cam" });
           }}
         >
           Show camera preview
@@ -43,6 +44,18 @@ function App() {
         </button>
         <button
           onClick={async () => {
+            try {
+              await CameraPreview.stop();
+              console.log("flipped");
+            } catch (e) {
+              console.log("not flipped");
+            }
+          }}
+        >
+          Stop camera preview
+        </button>
+        <button
+          onClick={async () => {
             const result = await CameraPreview.capture();
             console.log(result.value);
             setImage(result.value);
@@ -57,7 +70,7 @@ function App() {
         <button
           onClick={async () => {
             const result = await BiometricAuth.verify({
-              reason: "Message ..."
+              reason: "Message ...",
             });
             console.log(result);
           }}

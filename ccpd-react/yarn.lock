@@ -2653,6 +2653,10 @@ capacitor-biometric-auth@^0.0.8:
   dependencies:
     "@capacitor/core" latest
 
+"capacitor-camera-preview@link:../../capacitor-camera-preview":
+  version "0.0.0"
+  uid ""
+
 capture-exit@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-2.0.0.tgz#fb953bfaebeb781f62898239dabb426d08a509a4"
